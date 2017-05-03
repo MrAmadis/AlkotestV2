@@ -22,31 +22,6 @@
     <!-- Pop up windows i povuc gore -->
 
     <Button
-        android:text="CLEAR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:layout_alignBaseline="@+id/addButton"
-        android:layout_alignBottom="@+id/addButton"
-        android:layout_toEndOf="@+id/addButton" />
-
-    <Button
-        android:text="EDIT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toEndOf="@+id/button4"
-        android:id="@+id/button5" />
-
-    <Button
-        android:text="CLEAR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button5"
-        android:layout_toEndOf="@+id/button5"
-        android:id="@+id/button6" />
-
-    <Button
         android:text="HOW DRUNK AM I ?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,48 +29,6 @@
         android:id="@+id/btnNext"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/radioSex" />
-
-    <Button
-        android:text="ADD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addButton"
-        android:layout_above="@+id/btnNext"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="100dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/alcoholPercentageTextBox"
-        android:hint="Alcohol percentage in drink"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:id="@+id/alcoholQuantityTextBox"
-        android:hint="Amount of drink consumed (liters)"
-        android:inputType="numberDecimal"
-        android:layout_alignBottom="@+id/alcoholPercentageTextBox"
-        android:layout_marginBottom="46dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/drinkNameTextBox"
-        android:hint="Drink name"
-        android:inputType="text"
-        android:layout_above="@+id/alcoholQuantityTextBox"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="User data:"
@@ -141,8 +74,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/button4"
+        android:layout_below="@+id/btnClear"
         android:layout_above="@+id/btnNext"
         android:id="@+id/list" />
+
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:layout_below="@+id/textViewTimeSpentAfter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="CLEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClear"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_toEndOf="@+id/addButton" />
 
 </RelativeLayout>
